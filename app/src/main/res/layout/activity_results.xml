@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center" android:orientation="vertical" android:padding="24dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏆" android:textSize="64sp"/>
+    <TextView android:id="@+id/tvMsg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:gravity="center" android:textColor="@color/textPrimary" android:textSize="22sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvScore" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:text="0" android:textColor="@color/primary" android:textSize="44sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvStars" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="☆☆☆" android:textColor="@color/displayAmber" android:textSize="32sp"/>
+    <TextView android:id="@+id/tvBest" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="Personal best: 0" android:textColor="@color/textSecondary" android:textSize="15sp"/>
+    <Button android:id="@+id/btnAgain" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="28dp" android:text="🔁 Play again"/>
+    <Button android:id="@+id/btnHome" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="🏠 Home"/>
+</LinearLayout>

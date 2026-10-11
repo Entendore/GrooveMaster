@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp">
+    <com.example.groovemaster.RhythmView android:id="@+id/rhythmView"
+        android:layout_width="match_parent" android:layout_height="170dp"/>
+    <TextView android:id="@+id/tvRR" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:lineSpacingExtra="3dp" android:textColor="@color/textSecondary" android:textSize="14sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:orientation="horizontal">
+        <Button android:id="@+id/btnRRHear" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginEnd="4dp" android:text="▶ Hear it"/>
+        <Button android:id="@+id/btnRRStart" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="▶ Start"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnRRTap" android:layout_width="match_parent" android:layout_height="110dp"
+        android:layout_marginTop="10dp" android:text="TAP" android:textSize="30sp"/>
+    <Button android:id="@+id/btnRREnd" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:text="🏁 Finish &amp; save"/>
+</LinearLayout>

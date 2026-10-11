@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/labTvTempo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Tempo 100 BPM" android:textColor="@color/primary" android:textSize="13sp" android:textStyle="bold"/>
+            <SeekBar android:id="@+id/labTempo" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="10dp"/>
+        </LinearLayout>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:scrollbars="none">
+            <GridLayout android:id="@+id/labGrid" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:columnCount="17" android:background="@color/cardBg" android:padding="6dp"/>
+        </HorizontalScrollView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"
+            android:text="Tap = hit · long-press = ACCENT (X)" android:textColor="@color/textSecondary" android:textSize="12sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnLabPlay" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:text="▶ Play loop"/>
+            <Button android:id="@+id/btnLabClear" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🧹 Clear"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnLabSave" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="4dp" android:text="💾 Save"/>
+            <Button android:id="@+id/btnLabShare" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="📤 Share code"/>
+        </LinearLayout>
+        <Spinner android:id="@+id/labSaved" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        <Button android:id="@+id/btnLabImport" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="📥 Import code"/>
+    </LinearLayout>
+</ScrollView>

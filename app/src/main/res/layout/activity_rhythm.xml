@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <Spinner android:id="@+id/spinnerFamily" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:id="@+id/tvTempo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:text="Tempo 100%" android:textColor="@color/primary"
+                android:textSize="13sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <SeekBar android:id="@+id/seekTempo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="6dp">
+            <TextView android:id="@+id/tvProgress" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Question 1 / 10" android:textColor="@color/textSecondary" android:textSize="14sp"/>
+            <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:id="@+id/tvScore" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Score 0" android:textColor="@color/primary" android:textSize="14sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:max="10"/>
+        <TextView android:id="@+id/tvStreak" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:text="🔥 Streak 0" android:textColor="@color/textSecondary" android:textSize="13sp"/>
+        <TextView android:id="@+id/tvPrompt" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:text="Which groove is playing?"
+            android:textColor="@color/textPrimary" android:textSize="20sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvMeter" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:textColor="@color/secondary" android:textSize="13sp" android:textStyle="bold"/>
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:scrollbars="none">
+            <GridLayout android:id="@+id/stepGrid" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@color/cardBg" android:columnCount="17" android:padding="6dp"/>
+        </HorizontalScrollView>
+        <Button android:id="@+id/btnPlay" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:text="▶  Replay groove"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="vertical">
+            <Button android:id="@+id/btnOpt1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOpt2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOpt3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <Button android:id="@+id/btnOpt4" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvFeedback" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:lineSpacingExtra="3dp" android:textSize="14sp"/>
+        <Button android:id="@+id/btnNext" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:enabled="false" android:text="Next  →"/>
+    </LinearLayout>
+</ScrollView>
