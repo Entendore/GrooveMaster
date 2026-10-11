@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debugScroll" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <Button android:id="@+id/btnTInstrument" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🔊 Play all instruments"/>
+        <Button android:id="@+id/btnTTimbre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🎸 Play all timbres (KS etc.)"/>
+        <Button android:id="@+id/btnTIntegrity" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🧪 Data integrity check"/>
+        <Button android:id="@+id/btnTPitch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🎯 Pitch detector self-test"/>
+        <Button android:id="@+id/btnTLatency" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="⚡ Latency probe"/>
+        <Button android:id="@+id/btnTAllGrooves" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🥁 Play ALL grooves"/>
+        <Button android:id="@+id/btnTSRDue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📅 Force all SR cards due"/>
+        <Button android:id="@+id/btnTWipe" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🧹 Wipe SR + progress"/>
+        <TextView android:id="@+id/tvDebugLog" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:fontFamily="monospace" android:lineSpacingExtra="2dp"
+            android:textColor="@color/textSecondary" android:textSize="13sp"/>
+    </LinearLayout>
+</ScrollView>

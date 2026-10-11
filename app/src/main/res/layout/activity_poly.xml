@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp">
+    <Spinner android:id="@+id/spinnerRatio" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.example.groovemaster.PolyrhythmView android:id="@+id/polyView"
+        android:layout_width="match_parent" android:layout_height="260dp" android:layout_marginTop="12dp"/>
+    <TextView android:id="@+id/tvPolyHelp" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:textColor="@color/textSecondary" android:textSize="14sp"/>
+    <Button android:id="@+id/btnPolyGo" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" android:text="▶ Start"/>
+</LinearLayout>

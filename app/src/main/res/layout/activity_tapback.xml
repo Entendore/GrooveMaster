@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:id="@+id/tvTapStatus" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Tap ▶ to hear a pattern, then echo it!"
+                android:textColor="@color/textPrimary" android:textSize="15sp"/>
+            <TextView android:id="@+id/tvTapScore" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Score 0" android:textColor="@color/primary" android:textSize="16sp" android:textStyle="bold"/>
+        </LinearLayout>
+        <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="18dp" android:columnCount="2">
+            <Button android:id="@+id/btnPadKick" android:layout_width="130dp" android:layout_height="86dp" android:layout_margin="8dp" android:text="🦶 KICK"/>
+            <Button android:id="@+id/btnPadSnare" android:layout_width="130dp" android:layout_height="86dp" android:layout_margin="8dp" android:text="🥁 SNARE"/>
+            <Button android:id="@+id/btnPadHat" android:layout_width="130dp" android:layout_height="86dp" android:layout_margin="8dp" android:text="🎩 HAT"/>
+            <Button android:id="@+id/btnPadClap" android:layout_width="130dp" android:layout_height="86dp" android:layout_margin="8dp" android:text="👏 CLAP"/>
+        </GridLayout>
+        <Button android:id="@+id/btnTapStart" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:text="▶ Play pattern (12 rounds)"/>
+        <Button android:id="@+id/btnTapEnd" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:text="🏁 End &amp; score now"/>
+        <TextView android:id="@+id/tvTapResults" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:fontFamily="monospace" android:lineSpacingExtra="3dp"
+            android:textColor="@color/textSecondary" android:textSize="13sp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <TextView android:id="@+id/tvRevCount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/textSecondary" android:textSize="14sp"/>
+        <TextView android:id="@+id/tvRevPrompt" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:textColor="@color/textPrimary" android:textSize="18sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvRevDisplay" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:fontFamily="monospace" android:gravity="center"
+            android:textColor="@color/displayAmber" android:textSize="20sp"/>
+        <Button android:id="@+id/btnRevReplay" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:text="▶  Replay the audio"/>
+        <TextView android:id="@+id/tvRevAnswer" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:lineSpacingExtra="3dp" android:textColor="@color/textSecondary" android:textSize="14sp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnRevGot" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp" android:text="✅ Got it"/>
+            <Button android:id="@+id/btnRevAgain" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="🔁 Ask me again"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
